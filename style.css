@@ -1,0 +1,137 @@
+:root {
+    --primary: #FFB347;
+    --secondary: #FF6961;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.foodweb.it/wp-content/uploads/2020/07/ice-cream-2576622_1920.jpg');
+    background-size: cover;
+    height: 800px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    background-color: rgb(62, 111, 204);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    border-radius: 15px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(158, 200, 255);
+}
+
+.hero {
+    margin-top: 5rem;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.grid-gusti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.gusto-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gusto-card:hover {
+    transform: translateY(-5px);
+}
+
+.gusto-image{
+    max-height: 343px;
+}
+
+.info {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://i0.wp.com/www.kemcolor.it/wp-content/uploads/2023/06/Storia-colore-rosso.jpg?fit=1200%2C800&ssl=1");
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 429px));
+    grid-template-rows: inherit;
+    gap: 2rem;
+    padding: 3rem;
+    color:white;
+}
+
+.info-card{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenitore_della_mappa {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenitore_della_mappa:hover {
+    transform: translateY(-5px);
+}
+
+.maps{
+    border-radius: 15px;
+}
+
+footer {
+    background: var(--secondary);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
